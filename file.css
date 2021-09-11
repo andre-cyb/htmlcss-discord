@@ -120,6 +120,7 @@ h2{
     font-size: 36px;
     line-height: 120%;
     padding-bottom: 20px;
+    color: #7289DA;
 }
 
 .colonna-testo .p-main{
@@ -170,13 +171,24 @@ h3{
     display: table;
     clear: both;
 }
+.footer-content{
+    color: white;
+}
 .footer-background{
     background-color: #23272A;
 }
 
 .social-column{
     width: calc(100% / 6 * 2);
-    padding-left: 30px;
+    padding-right: 70px;
+}
+.social-column > p{
+    padding-bottom: 20px;
+
+}
+.social-column p img{
+    width: 25px;
+    vertical-align: middle;
 }
 
 .menu-column{
@@ -184,10 +196,37 @@ h3{
 }
 .menu-column ul li{
     list-style-type: none;
+    padding-bottom: 10px;
 }
 .menu-column ul li a{
     text-decoration: none;
+    color: white;
+}
+.menu-column ul li :hover{
+    text-decoration: underline;
 }
 [class*="column"]{
     float: left;
+}
+
+span i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.social-column span a{
+    color: white;
+}
+
+.social-column p i{
+    padding-left: 8px;
+}
+
+
+.menu-column ul .menu-title{
+    color: #7289DA;
+    font-weight: 700;
+}
+.footer-content-logo{
+    max-width: 1300px;
+    margin: auto;
 }
