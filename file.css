@@ -18,7 +18,7 @@ header{
     max-width: 1300px;
     margin: auto;
 }
-.header-nav-bar *{
+.header-nav-bar *, .footer-content-logo *{
     display: inline-block;
     text-decoration: none;
 }
@@ -31,7 +31,7 @@ header{
     width: calc(100% / 6 * 4);
     text-align: center;
 }
-.header-nav-bar .accedi{
+.header-nav-bar .accedi, .footer-content-logo .accedi{
     
     width: calc(100% / 6 );
     display: inline;
@@ -41,7 +41,7 @@ header{
     text-align: right;
     padding: 7px 16px;
 }
-.accedi a{
+.header-nav-bar .accedi a, .footer-content-logo .accedi a{
     font-size: 14px;
     border-radius: 40px;
     vertical-align: middle;
@@ -89,7 +89,7 @@ header{
 
 }
 
-.main-content, .footer-content{
+.main-content{
     max-width: 1300px;
     margin: auto;
     padding: 170px 0px;
@@ -114,17 +114,18 @@ header{
 .colonna-testo{
     width: calc(100% / 6 * 2);
     padding-top: 30px ;
-    padding-right: 170px;
+    padding-right: 100px;
 }
 h2{
-    font-size: 36px;
+    font-size: 45px;
     line-height: 120%;
     padding-bottom: 20px;
-    color: #7289DA;
+    
 }
 
 .colonna-testo .p-main{
-    font-size: 15px;  
+    font-size: 15px; 
+    font-weight: 500; 
 }
 
 .col{
@@ -137,11 +138,7 @@ h2{
     width: 100%;
     background-color: #f6f6f6;
 }
-/* .img-stars{
-    display: block;
-    position: absolute;
-    bottom: -10px;
-} */
+
 .full-width-backg .main-content .dowload-for-mac a{
     font-size: 16px;
     padding: 16px 32px;
@@ -149,6 +146,7 @@ h2{
     color: white;
     background-color: #8EA1E1;
     text-decoration: none;
+    
 }
 .main-content:nth-child(3){
     position: relative;
@@ -159,7 +157,7 @@ h2{
 h3{
     bottom: 20px;
     position: relative;
-    font-size: 26px;
+    font-size: 30px;
     padding-bottom: 30px; 
 }
 .main-content .last-section-main p{
@@ -202,7 +200,7 @@ h3{
     text-decoration: none;
     color: white;
 }
-.menu-column ul li :hover{
+.menu-column ul li :hover, .header-nav-bar ul li a:hover{
     text-decoration: underline;
 }
 [class*="column"]{
@@ -220,13 +218,55 @@ span i{
 .social-column p i{
     padding-left: 8px;
 }
+.social-column h2{
+    color: #7289DA;
+}
 
 
 .menu-column ul .menu-title{
     color: #7289DA;
     font-weight: 700;
 }
+.footer-content{
+    max-width: 1300px;
+    margin: auto;
+    padding: 170px 0px 30px 0px;
+}
 .footer-content-logo{
     max-width: 1300px;
     margin: auto;
+    vertical-align: middle;
+    padding: 30px 30px 60px 30px;
+    
+    border-top: 1px solid #4A5882;
+    position: relative;
+    
 }
+.footer-content-logo div img{
+    vertical-align: middle;
+}
+
+
+.footer-content-logo .accedi{
+    background-color: #8EA1E1;
+    color: white;
+    text-align: right; 
+    position: absolute;
+    right: 30px;
+    width: auto;
+    transition: background-color .2s linear;
+}
+.footer-content-logo .accedi a{
+    color: white;
+    
+}
+
+
+.footer-content-logo .accedi:hover{
+    background-color: #7289DA;
+    
+}
+/* .dowload-for-mac a:hover{
+    background-color: #7289DA;
+    box-shadow: 1px 10px 15px #cfcfcf;
+} */
