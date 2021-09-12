@@ -270,3 +270,10 @@ span i{
     background-color: #7289DA;
     box-shadow: 1px 10px 15px #cfcfcf;
 } */
+.wave-top{
+    margin-bottom: -8px;
+}
+.wave-bottom{
+    margin-top: -8px;
+    transform: rotate(180deg);
+}
